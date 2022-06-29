@@ -1,0 +1,67 @@
+.hero {
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &-icons {
+    list-style: none;
+    margin-bottom: -45px;
+    &-items {
+      margin-bottom: 45px;
+      color: $color-white;
+    }
+  }
+  &-content {
+    margin-left: 78px;
+  }
+  &-name {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: calc(41 / 35);
+    color: $color-white;
+    margin-bottom: 18px;
+  }
+  &-work {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: $color-white;
+    margin-bottom: 10px;
+    display: block;
+  }
+  &-more {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    max-width: 415px;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  &-link {
+    padding: 21px 36px;
+    border-radius: 9px;
+    border: 5px solid;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    a {
+      font-family: $font-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: calc(21 / 18);
+      text-decoration: none;
+      color: #00ffd1;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    &:hover a {
+      box-shadow: 1px 1px 10px #00ffd1;
+      text-decoration: none;
+    }
+  }
+  &-image {
+    transform: translateY(15%);
+  }
+}

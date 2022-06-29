@@ -1,0 +1,33 @@
+body {
+  max-width: 1470px;
+  font-family: $font-primary;
+  font-size: 20px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background: $color-black;
+  color: $color-white;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background: $color-black;
+  position: relative;
+}
+.background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  transform: translateX(50%);
+  img {
+    width: 100%;
+  }
+}
+
+.is-mode {
+  background: $color-white;
+  color: $color-black;
+}
