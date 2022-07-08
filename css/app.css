@@ -459,7 +459,6 @@ body {
 .menu-items.active {
   border: 1px solid #00ffd1;
   background-image: linear-gradient(180deg, #2b00d9 0%, #00ffd1 100%);
-  transform: scale(1.2);
 }
 
 @media screen and (max-width: 2559.98px) {
@@ -548,15 +547,14 @@ body {
   .menu-list {
     width: 425px;
     padding: 15px 30px 30px;
-    left: 50%;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 790px;
-    transform: translate(-50%, 0);
+    top: 720px;
     background-color: rgba(204, 204, 204, 0.247);
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
+    position: fixed;
   }
   .menu-items {
     margin: 0 5px;
@@ -565,6 +563,12 @@ body {
   }
   .menu-items img {
     width: 50px;
+  }
+
+  .menu-items.active {
+    border: 1px solid #00ffd1;
+    background-image: linear-gradient(180deg, #2b00d9 0%, #00ffd1 100%);
+    transform: scale(1.2);
   }
 }
 .about {
