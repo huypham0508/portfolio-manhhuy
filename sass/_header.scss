@@ -31,3 +31,26 @@
   display: none;
   opacity: 0;
 }
+@media screen and (max-width: 1023.98px) {
+  .header {
+    &-logo {
+      font-weight: 400;
+      font-size: 65px;
+      line-height: calc(70 / 65);
+      letter-spacing: 0.39em;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header {
+    margin-bottom: 50px;
+    &-logo {
+      font-size: 30px;
+      line-height: calc(32 / 30);
+    }
+    &-sun,
+    &-moon {
+      font-size: 40px;
+    }
+  }
+}

@@ -1,3 +1,6 @@
+html {
+  scroll-padding-top: 100px;
+}
 body {
   max-width: 1470px;
   font-family: $font-primary;
@@ -30,4 +33,50 @@ body {
 .is-mode {
   background: $color-white;
   color: $color-black;
+}
+@media screen and (max-width: 1919.98px) {
+  .background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    transform: translateX(50%);
+    img {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 1439.98px) {
+  .background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    transform: translateX(50%);
+    img {
+      width: 60%;
+    }
+  }
+  .container {
+    max-width: 980px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background: $color-black;
+    position: relative;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    transform: translateX(70%);
+    img {
+      width: 50%;
+    }
+  }
+  .container {
+    max-width: 680px;
+  }
 }

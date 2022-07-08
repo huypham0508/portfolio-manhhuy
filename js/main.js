@@ -11,7 +11,21 @@ $(".portfolio-container").slick({
   nextArrow:
     '<div class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></div>',
 });
-
+const menuList = () => {
+  const menuLinks = document.querySelectorAll(".menu-links");
+  const menuItems = document.querySelectorAll(".menu-items");
+  const arLinks = ["#hero", "#about", "#skill", "#portfolio", "#contact"];
+  function Redirect(links) {
+    window.location = links;
+  }
+  menuItems.forEach((item, index) =>
+    item.addEventListener("click", function (event) {
+      menuItems.forEach((el) => el.classList.remove("active"));
+      event.target.classList.add("active");
+      Redirect(arLinks[index]);
+    })
+  );
+};
 const showSkill = () => {
   const button = document.querySelectorAll(".skill-items");
   const menu = document.querySelectorAll(".skill-menu");
@@ -41,5 +55,13 @@ const mode = () => {
     });
   }
 };
+const sendContact = () => {
+  const sendBtn = document.querySelector(".contact-button");
+  sendBtn.addEventListener("click", () => {
+    alert("Tính năng chưa được hoàn thiện");
+  });
+};
+menuList();
 showSkill();
 mode();
+sendContact();
