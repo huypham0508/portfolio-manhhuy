@@ -11,6 +11,7 @@ body {
   background: $color-black;
   color: $color-white;
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  position: relative;
 }
 .container {
   max-width: 1200px;

@@ -14,7 +14,7 @@ $(".portfolio-container").slick({
 const menuList = () => {
   const menuLinks = document.querySelectorAll(".menu-links");
   const menuItems = document.querySelectorAll(".menu-items");
-  const arLinks = ["#hero", "#about", "#skill", "#portfolio", "#contact"];
+  const arLinks = ["#", "#about", "#skill", "#portfolio", "#contact"];
   function Redirect(links) {
     window.location = links;
   }

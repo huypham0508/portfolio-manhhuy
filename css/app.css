@@ -60,6 +60,7 @@ body {
   background: #000;
   color: #fff;
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  position: relative;
 }
 
 .container {
@@ -399,6 +400,7 @@ body {
 
   .mobile {
     display: block;
+    margin-bottom: 700px;
   }
 }
 .menu {
@@ -545,16 +547,16 @@ body {
 }
 @media screen and (max-width: 767.98px) {
   .menu-list {
-    width: 425px;
-    padding: 15px 30px 30px;
-    left: 0;
+    width: 385px;
+    padding: 15px 30px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 720px;
-    background-color: rgba(204, 204, 204, 0.247);
-    border-radius: 20px;
+    top: 620px;
     position: fixed;
+    left: 5px;
+    background-color: #797979;
+    border-radius: 20px;
   }
   .menu-items {
     margin: 0 5px;
@@ -573,7 +575,6 @@ body {
 }
 .about {
   margin-bottom: 700px;
-  display: none;
 }
 .about-heading {
   font-family: "Roboto", sans-serif;
@@ -638,7 +639,6 @@ body {
 
 .portfolio {
   margin-bottom: 700px;
-  display: none;
 }
 .portfolio-items {
   display: flex !important;
@@ -740,12 +740,10 @@ body {
 
 .skill {
   margin-bottom: 700px;
-  display: none;
 }
 .skill-container {
   display: flex;
   margin-left: -80px;
-  display: none;
 }
 .skill-show {
   margin-left: 80px;
@@ -913,7 +911,6 @@ body {
 .contact {
   margin-bottom: 700px;
   padding-bottom: 500px;
-  display: none;
 }
 .contact-container {
   display: flex;
