@@ -1,6 +1,5 @@
 .about {
   margin-bottom: 700px;
-  display: none;
   &-heading {
     font-family: $font-primary;
     font-style: normal;
@@ -59,6 +58,100 @@
       transform: translateX(-20%);
       max-width: 122px;
       width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1439.98px) {
+  .about {
+    &-images {
+      img {
+        width: 70%;
+      }
+    }
+    &-content {
+      margin-left: 0px;
+    }
+    &-desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: calc(21 / 18);
+      color: $color-white;
+      margin-bottom: 50px;
+    }
+    &-more {
+      &-heading {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: calc(41 / 35);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .about {
+    &-desc {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 25px;
+      -webkit-line-clamp: 3;
+      height: 75px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      max-width: 263px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    &-content {
+      transform: translateX(-20%);
+    }
+    &-more {
+      &-heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: calc(35 / 30);
+      }
+      &-desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+      }
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about {
+    &-container {
+      flex-direction: column;
+    }
+    &-images {
+      img {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &-content {
+      transform: translateX(0);
+    }
+    &-desc {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 25px;
+      -webkit-line-clamp: 3;
+      height: 75px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      max-width: 300px;
+    }
+    &-more {
+      transform: translateX(30px);
+      &-heading {
+        transform: translateX(20px);
+      }
     }
   }
 }
