@@ -7,7 +7,6 @@ body {
   font-size: 20px;
   padding: 0 15px;
   margin: 0 auto;
-  overflow-x: hidden;
   background: $color-black;
   color: $color-white;
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -22,7 +21,6 @@ body {
 }
 .background {
   position: absolute;
-  right: 0;
   top: 0;
   z-index: 9;
   transform: translateX(50%);
@@ -81,9 +79,15 @@ body {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .background {
+    display: none;
+  }
+  .container {
+    background-color: transparent;
+  }
   body {
+    background-image: url(../images/background-mobile.png);
     max-width: 425px;
     width: 100%;
-    overflow: hidden;
   }
 }
