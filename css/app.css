@@ -133,6 +133,10 @@ body {
   }
 }
 @media screen and (max-width: 767.98px) {
+  html {
+    scroll-padding-top: 30px;
+  }
+
   .background {
     display: none;
   }
@@ -577,7 +581,6 @@ body {
   .menu-items.active {
     border: 1px solid #00ffd1;
     background-image: linear-gradient(180deg, #2b00d9 0%, #00ffd1 100%);
-    transform: scale(1.2);
   }
 }
 @media screen and (max-width: 424.98px) {
@@ -589,39 +592,39 @@ body {
 }
 @media screen and (max-width: 409.98px) {
   .menu-list {
-    width: 375px;
-    height: 80px;
+    width: 350px;
+    height: 70px;
     padding: 10px 10px 10px;
-    right: 0;
+    right: 5px;
     bottom: 5px;
     transform: translate(0);
   }
   .menu-items img {
-    width: 80%;
+    width: 70%;
   }
   .menu-items:first-child {
-    padding: 8px 2px 8px 8px;
+    padding: 8px 0px 8px 8px;
   }
   .menu-items:first-child img {
     transform: translateX(2px);
   }
   .menu-items:nth-child(2) {
-    padding: 10px 7px 10px 5px;
+    padding: 10px 5px 10px 5px;
   }
   .menu-items:nth-child(2) img {
     transform: translateX(6px);
   }
   .menu-items:nth-child(3) {
-    padding: 10px 0px 10px 10px;
+    padding: 12px 0px 12px 13px;
   }
   .menu-items:nth-child(4) {
     padding: 10px 0px 7px 8px;
   }
   .menu-items:nth-child(4) img {
-    transform: translateX(1px);
+    transform: translateX(3px);
   }
   .menu-items:last-child {
-    padding: 10px 0px 10px 10px;
+    padding: 13px 0px 10px 10px;
   }
   .menu-items:last-child img {
     transform: translateX(0px);

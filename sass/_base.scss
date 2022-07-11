@@ -79,6 +79,9 @@ body {
   }
 }
 @media screen and (max-width: 767.98px) {
+  html {
+    scroll-padding-top: 30px;
+  }
   .background {
     display: none;
   }
