@@ -80,3 +80,10 @@ body {
     max-width: 680px;
   }
 }
+@media screen and (max-width: 767.98px) {
+  body {
+    max-width: 425px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
